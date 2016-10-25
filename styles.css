@@ -1,0 +1,75 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #404751;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    min-width: 620px;
+}
+
+#clock {
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    font-size: 5em;
+    cursor: default;
+}
+
+#selection {
+    display: flex;
+    flex-direction: row
+}
+
+#selection li {
+    font-family: helvetica;
+    text-transform: uppercase;
+    list-style: none;
+    margin-right: 10px;
+    padding-bottom: 2.5px;
+    font-size: 0.75em;
+    cursor: default;
+
+}
+
+#selection li:nth-child(1) {
+    color: #F3463E;
+}
+#selection li:nth-child(2) {
+    color: #3AA1BE;
+}
+#selection li:nth-child(3) {
+    color: #D69632;
+}
+#selection li:nth-child(4) {
+    color: #AD46A8;
+}
+#selection li:nth-child(5) {
+    color: #82A457;
+}
+#selection li:nth-child(6) {
+    color: #6E81C9;
+}
+#selection li:nth-child(7) {
+    color: #F3354B;
+}
+#selection li:nth-child(8) {
+    color: #2EB8DB;
+}
+#selection li:nth-child(9) {
+    color: #9FCB39;
+}
+
+#selection li:not(.active):hover {
+    color: #EDEDED;
+    cursor: pointer;
+}
+
+.active {
+    border-bottom: solid 1px;
+}
