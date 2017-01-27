@@ -3,7 +3,7 @@ $(document).ready(function () {
     function displayTime() {
 
         //Creates the moment instance to UTC time
-        var time = moment.utc();
+        let time = moment.utc();
 
         //Switches the active list item and adjustes time depending on the name in the list
         switch ($(".active").text()) {
@@ -42,7 +42,7 @@ $(document).ready(function () {
     }
 
     // Selects the button clicked and change its class to '.active'
-    $("li").click(function () {
+    $("li").click( () => {
         // Removes the active class form the other list items
         $("li").removeClass("active");
         // Ads the active class to the clicked list item
