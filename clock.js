@@ -41,8 +41,8 @@ $(document).ready(function () {
         document.getElementById('clock').innerText = time.format("h:mm:ss A");
     }
 
-    // Selects the button clicked and change its class to '.active'
-    $("li").click( () => {
+    // Selects the button clicked and changes its class to '.active'
+    $("li").click(function() {
         // Removes the active class form the other list items
         $("li").removeClass("active");
         // Ads the active class to the clicked list item
