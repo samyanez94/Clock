@@ -52,6 +52,6 @@ $(document).ready(function () {
     // Runs the `displayTime` function the first time
     displayTime();
 
-    // Runs the displayTime function every second.
+    // Runs the displayTime function every second
     setInterval(displayTime, 500);
 });
