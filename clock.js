@@ -2,10 +2,10 @@ $(document).ready(function () {
 
     function displayTime() {
 
-        //Creates the moment instance to UTC time
+        // Initializes the moment instance to UTC time
         let time = moment.utc();
 
-        //Switches the active list item and adjustes time depending on the name in the list
+        // Switches the active list item and adjusts the time depending on the name in the list
         switch ($(".active").text()) {
         case "Caracas":
             time = moment.tz("America/Caracas");
@@ -37,7 +37,7 @@ $(document).ready(function () {
         default:
         }
 
-        //Displays a formatted version of time inside the clock division
+        // Displays a formatted version of time inside the clock division
         document.getElementById('clock').innerText = time.format("h:mm:ss A");
     }
 
@@ -49,7 +49,7 @@ $(document).ready(function () {
         $(this).addClass("active");
     });
 
-    // Runs the displayTime function the first time
+    // Runs the `displayTime` function the first time
     displayTime();
 
     // Runs the displayTime function every second.
